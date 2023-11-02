@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SEGURO NO PAGAMOS COOPERATIVA</title>
+</head>
+
+<body>
+
+    <header>
+        <p>SEGURO NO PAGAMOS COOPERATIVA</p>
+    </header>
+
+    <div class="form_y_datos">
+        <form action="">
+            <div class="formulario">
+                <input type="text" name="nombre" id="nombre" placeholder="nombre(s)" autofocus required>
+                <input type="text" name="Apellido" id="apellido" placeholder="apellido" required>
+                <input type="text" name="dni" id="dni" placeholder="DNI" required>
+                <input type="email" name="correo" id="correo" placeholder="correo electrónico" required>
+                <input type="text" name="telefono" id="teefono" placeholder="teléfono" required>
+                <select id="producto" name="producto" onchange="ShowSelected();">
+                    <option hidden>Seleccione la opción deseada</option>
+                    <option value="$500">Básico</option>
+                    <option value="$1000">Intermedio</option>
+                    <option value="$1500">Premium</option>
+                </select>
+                <input type="submit" value="Solicitar asesoría">
+            </div>
+        </form>
+        <div id="datos" class="datos">
+            <h2 id="tipo_seguro"></h2>
+            <h2 id="precio_seguro"></h2>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
